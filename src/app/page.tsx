@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </section>
         <section className="relative w-full md:h-screen">
-          <div className="bg-[url('../../public/linkedIn-img.jpeg')] bg-cover bg-no-repeat bg-right-top w-full h-[300px] before:content-[''] before:absolute before:inset-0 before:block before:bg-gradient-to-r before:from-black before:to-purple-500 before:opacity-40 before:z-10 xs:h-[400px] md:h-screen" />
+          <div className="bg-[url('../../public/linkedIn-img.webp')] bg-cover bg-no-repeat bg-right-top w-full h-[300px] before:content-[''] before:absolute before:inset-0 before:block before:bg-gradient-to-r before:from-black before:to-purple-500 before:opacity-40 before:z-10 xs:h-[400px] md:h-screen" />
         </section>
       </main>
     </>
