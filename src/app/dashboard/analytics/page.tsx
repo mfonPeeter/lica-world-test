@@ -1,4 +1,4 @@
-import MobileSideBarHeader from "@/components/MobileSidebarHeader";
+import MobileSideBarHeader from "@/components/Sidebar/MobileSidebarHeader";
 
 export default function Analytics() {
   return (

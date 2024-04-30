@@ -1,5 +1,5 @@
 import { auth } from "@clerk/nextjs/server";
-import MobileSideBarHeader from "@/components/MobileSidebarHeader";
+import MobileSideBarHeader from "@/components/Sidebar/MobileSidebarHeader";
 import DashboardForm from "@/components/DashboardForm";
 
 export default async function Dashboard() {

@@ -4,10 +4,14 @@ import { useContext } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { UserButton } from "@clerk/nextjs";
 import { AppContext } from "@/context/app-context";
+import SidebarFooter from "./SidebarFooter";
 
-export default function Sidebar() {
+export default function SidebarContent({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   const { showSidebar, showSidebarHandler } = useContext(AppContext);
   const pathname = usePathname();
 
@@ -186,10 +190,7 @@ export default function Sidebar() {
               <span>Send Feedback</span>
             </Link>
           </div>
-          <div className="flex items-center space-x-2 px-5 pt-2 border-t">
-            <UserButton />
-            <span className="text-sm font-medium">Mfonobong Peter</span>
-          </div>
+          {children}
         </div>
       </nav>
     </>
