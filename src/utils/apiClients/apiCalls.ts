@@ -1,3 +1,6 @@
+// In vercel, NEXT_PUBLIC_BASE_URL will be set to "https://lica-world-test.vercel.app" to avoid production error
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
+
 // Get user Id
 export const linkedInGetUserId = async (accessToken: string) => {
   const options: RequestInit = {
@@ -6,7 +9,7 @@ export const linkedInGetUserId = async (accessToken: string) => {
       Authorization: `Bearer ${accessToken}`,
     },
   };
-  const response = await fetch("http://localhost:3000/api/linkedin", options);
+  const response = await fetch(`${baseUrl}/api/linkedin`, options);
   return response.json();
 };
 
@@ -27,7 +30,7 @@ export const linkedInShareTextPost = async (
       content: postContent,
     }),
   };
-  const response = await fetch("http://localhost:3000/api/linkedin", options);
+  const response = await fetch(`${baseUrl}/api/linkedin`, options);
 
   return response.json();
 };

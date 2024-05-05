@@ -6,8 +6,8 @@ export default async function SidebarFooter() {
   const fullName = sessionClaims?.fullName as string;
 
   return (
-    <div className="px-5 pt-2">
-      <div className="flex items-center space-x-2 overflow-x-hidden">
+    <div className="px-3 pt-2 border-t">
+      <div className="flex items-center px-2 pt-1 pb-2.5 space-x-2 overflow-x-hidden">
         <UserButton />
         <span className="text-sm font-medium whitespace-nowrap">
           {fullName}

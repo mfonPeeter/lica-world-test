@@ -24,7 +24,7 @@ export default function SidebarContent({
         }`}
       />
       <nav
-        className={`absolute z-20 flex flex-col justify-between bg-gray-100 pt-4 pb-2 text-[14.5px] w-[80%] transition-all duration-500 md:h-screen md:relative md:w-[250px] md:translate-x-0 ${
+        className={`absolute z-20 flex flex-col justify-between bg-gray-100 pt-4 text-[14.5px] w-[80%] transition-all duration-500 overflow-x-hidden md:h-screen md:relative md:w-[250px] md:translate-x-0 ${
           showSidebar ? "-translate-x-0" : "-translate-x-full"
         }`}
       >
