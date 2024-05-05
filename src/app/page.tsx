@@ -7,7 +7,13 @@ export default function Home() {
       <header className="md:hidden">
         <div className="absolute top-4 left-3 z-20">
           <Link href="/">
-            <Image src="/logo.webp" alt="Logo" width="170" height="170" />
+            <Image
+              src="/logo.webp"
+              alt="Logo"
+              width="170"
+              height="170"
+              priority
+            />
           </Link>
         </div>
       </header>
@@ -15,7 +21,13 @@ export default function Home() {
         <section className="w-full pt-12 md:h-screen md:pt-0">
           <div className="hidden w-auto mb-10 p-4 md:block lg:mb-14">
             <Link href="/" className="inline-block">
-              <Image src="/logo.webp" alt="Logo" width="170" height="170" />
+              <Image
+                src="/logo.webp"
+                alt="Logo"
+                width="170"
+                height="170"
+                priority
+              />
             </Link>
           </div>
           <div className="px-3 pb-6 xs:px-6 md:pb-2 lg:px-10">

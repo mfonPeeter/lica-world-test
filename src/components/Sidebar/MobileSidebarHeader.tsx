@@ -24,7 +24,13 @@ export default function MobileSideBarHeader() {
           />
         </button>
         <Link href="/" className="inline-block">
-          <Image src="/logo.webp" alt="Logo" width="170" height="170" />
+          <Image
+            src="/logo.webp"
+            alt="Logo"
+            width="170"
+            height="170"
+            priority
+          />
         </Link>
       </div>
 

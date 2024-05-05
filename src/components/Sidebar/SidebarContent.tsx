@@ -31,7 +31,13 @@ export default function SidebarContent({
         <div className="flex flex-col justify-between h-screen px-3">
           <div className="flex flex-col-reverse space-y-reverse space-y-2 items-center justify-between mb-6 xs:flex-row xs:space-y-0">
             <Link href="/" className="self-start">
-              <Image src="/logo.webp" alt="Logo" width="170" height="170" />
+              <Image
+                src="/logo.webp"
+                alt="Logo"
+                width="170"
+                height="170"
+                priority
+              />
             </Link>
             <button
               onClick={showSidebarHandler}

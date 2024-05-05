@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import Sidebar from "@/components/Sidebar/Sidebar";
 
 export default function DashboardLayout({
@@ -8,7 +9,8 @@ export default function DashboardLayout({
   return (
     <main className="flex">
       <Sidebar />
-      <section className="w-full h-screen">{children}</section>
+      <section className="w-full">{children}</section>
+      <Toaster richColors position="top-right" />
     </main>
   );
 }

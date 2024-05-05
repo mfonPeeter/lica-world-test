@@ -6,9 +6,13 @@ export default async function SidebarFooter() {
   const fullName = sessionClaims?.fullName as string;
 
   return (
-    <div className="flex items-center space-x-2 px-5 pt-2 border-t">
-      <UserButton />
-      <span className="text-sm font-medium">{fullName}</span>
+    <div className="px-5 pt-2">
+      <div className="flex items-center space-x-2 overflow-x-hidden">
+        <UserButton />
+        <span className="text-sm font-medium whitespace-nowrap">
+          {fullName}
+        </span>
+      </div>
     </div>
   );
 }
