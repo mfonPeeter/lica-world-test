@@ -8,7 +8,7 @@ export const getAccessToken = async () => {
 
   const clerkResponse = await clerkClient.users.getUserOauthAccessToken(
     userId as string,
-    provider
+    provider,
   );
 
   const accessToken = (clerkResponse as any)[0].token;
