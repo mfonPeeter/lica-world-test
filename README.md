@@ -59,7 +59,7 @@ With permission granted to readdress the challenge, I'm pleased to report that I
 
 - After creating an app on LinkedIn Developer's website, I added the "Share on LinkedIn" and "Sign In with LinkedIn using OpenID Connect" products to my app. Following this, I configured the LinkedIn connection for my production instance by following the Clerk documentation.
 
-- Following that, I proceeded to obtain the unique authenticated user access token. Through research, I discovered the method for retrieving the user OAuth access token in the Clerk documentation. The code can be found in `src/utils/dateUtils.ts`
+- Following that, I proceeded to obtain the unique authenticated user access token. Through research, I discovered the method for retrieving the user OAuth access token in the Clerk documentation. The code can be found in `src/utils/authUtils.ts`
 
 - Once I obtained the access token, my next task was to retrieve the user ID, which I needed for making requests to the LinkedIn Share API. To accomplish this, I sent a request to the `https://api.linkedin.com/v2/userinfo` LinkedIn API endpoint. From the response, I extracted the `sub` value, which I referred to as the user ID. This request was executed by including the access token in the authorization headers. The code can be found in `src/app/api/linkedIn/route.ts`
 
